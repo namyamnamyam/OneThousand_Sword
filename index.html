@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b0f" />
+  <title>만검 아카데미</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#overview" class="brand" aria-label="만검 아카데미 홈">
+      <strong>MANGEOM <span>ACADEMY</span></strong>
+      <small>ACADEMY OF TEN THOUSAND SWORDS</small>
+    </a>
+    <nav>
+      <a href="#overview" class="nav-link active">아카데미 개요</a>
+      <a href="#calendar" class="nav-link">학사 일정</a>
+      <a href="#characters" class="nav-link">등장 인물</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview" class="section hero-section">
+      <div class="hero-panel">
+        <div class="hero-bg"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">THE GREAT CONVERGENCE · 300 YEARS LATER</p>
+          <h1>모든 세계의 검술이<br><span>하나의 아카데미에 모였다.</span></h1>
+          <p>대융합 이후 수많은 세계와 문화권에서 독립적으로 발전한 검술을 연구하고, 정립하고, 보존하고, 가르치는 세계 최대 규모의 검술 교육 기관.</p>
+          <div class="hero-tags"><span>3년제</span><span>총원 300명</span><span>범세계 검술 교육</span></div>
+        </div>
+      </div>
+
+      <div class="grid two-col overview-grid">
+        <article class="panel">
+          <div class="panel-title"><span class="icon">✦</span><h2>세계관 핵심</h2></div>
+          <div class="stat-list">
+            <div><span>대융합</span><strong>수많은 세계의 일부가 하나로 중첩</strong></div>
+            <div><span>초상 에너지</span><strong>에너지는 같고, 기술 체계는 다르다</strong></div>
+            <div><span>공통 전투 등급</span><strong>D → C → B → A → S → SS → SSS</strong></div>
+            <div><span>최고 확인 등급</span><strong>SS · 셀레스티아 리멘</strong></div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-title"><span class="icon">⌂</span><h2>아카데미 주요 시설</h2></div>
+          <div class="facility-grid">
+            <div class="facility-card featured"><b>대련장</b><small>수업 · 개인 훈련 · 학생 간 대련</small></div>
+            <div class="facility-card"><b>도서관</b><small>검술서 · 검보 · 심법 · 전투 기록</small></div>
+            <div class="facility-card"><b>양호실</b><small>부상 · 초상 에너지 과사용 치료</small></div>
+            <div class="facility-card"><b>학생 기숙사</b><small>전원 1인 1실 · 혼성 운영</small></div>
+          </div>
+        </article>
+      </div>
+
+      <article class="panel academy-system">
+        <div class="panel-title"><span class="icon">⚔</span><h2>만검 아카데미 교육 체계</h2></div>
+        <p>학생은 반 단위로 고정되지 않으며 학년으로만 구분된다. 특정 문화권의 검술만을 가르치지 않고, 수업·훈련·대련을 통해 서로 다른 세계의 검술과 끊임없이 충돌하고 비교한다.</p>
+        <div class="system-pills">
+          <span>검술 기초학</span><span>초상 에너지 운용학</span><span>검술 분석학</span><span>실전 대련</span><span>그 외 다수의 선택·응용 수업</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="calendar" class="section">
+      <div class="section-heading"><p>ACADEMY CALENDAR</p><h2>학사 일정</h2></div>
+      <div class="calendar-card spring">
+        <div class="calendar-head"><strong>상반기 · 3월 — 7월</strong><span>SPRING / SUMMER</span></div>
+        <div class="calendar-grid">
+          <div class="event"><b>03월</b><span>입학식 및 신입생 오리엔테이션</span></div>
+          <div class="event highlight"><b>03월</b><span>정기 결투평가 · 1분기</span></div>
+          <div class="event"><b>04월</b><span>교류 대련 및 자유 훈련 기간</span></div>
+          <div class="event highlight"><b>06월</b><span>정기 결투평가 · 2분기</span></div>
+          <div class="event summer"><b>07월</b><span>바다 여행 · 휴식 / 친목 / 관계 형성</span></div>
+        </div>
+      </div>
+      <div class="calendar-card fall">
+        <div class="calendar-head"><strong>하반기 · 9월 — 12월</strong><span>FALL / WINTER</span></div>
+        <div class="calendar-grid">
+          <div class="event highlight"><b>09월</b><span>정기 결투평가 · 3분기</span></div>
+          <div class="event"><b>10월</b><span>문화권 교류 수업 집중 기간</span></div>
+          <div class="event highlight"><b>12월</b><span>정기 결투평가 · 4분기</span></div>
+          <div class="event festival"><b>12월</b><span>만검 축제 · 부스 / 공연 / 시범 / 친선 대련</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="characters" class="section">
+      <div class="section-heading"><p>MANGEOM PERSONAS</p><h2>등장 인물</h2></div>
+      <div id="character-groups"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="character-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="닫기">×</button>
+      <div class="modal-image-wrap"><img id="modal-image" alt="캐릭터 이미지" /></div>
+      <div class="modal-content">
+        <div class="modal-topline"><span id="modal-grade" class="grade-badge"></span><span id="modal-role"></span></div>
+        <h3 id="modal-name"></h3>
+        <p id="modal-sub"></p>
+        <div class="modal-columns">
+          <div><small>외형</small><p id="modal-look"></p></div>
+          <div><small>성격</small><p id="modal-personality"></p></div>
+        </div>
+        <div class="modal-box"><small>전투 방식</small><strong id="modal-style"></strong><p id="modal-desc"></p></div>
+      </div>
+    </article>
+  </div>
+
+  <footer>MANGEOM ACADEMY OFFICIAL · ONE THOUSAND SWORD</footer>
+  <script src="script.js"></script>
+</body>
+</html>
