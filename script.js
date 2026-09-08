@@ -27,7 +27,6 @@ const groups = [
 ];
 
 const groupRoot=document.querySelector('#character-groups');
-const initials=n=>n.split(' ').map(v=>v[0]).join('').slice(0,3);
 
 groups.forEach(group=>{
   const section=document.createElement('section');section.className='group';
@@ -35,7 +34,7 @@ groups.forEach(group=>{
   const grid=section.querySelector('.character-grid');
   group.chars.forEach(c=>{
     const card=document.createElement('article');card.className='character-card';card.dataset.accent=c.accent||'blue';
-    card.innerHTML=`<div class="character-image"><div class="placeholder">${initials(c.name)}</div><img src="${c.img}" alt="${c.name}" loading="lazy" onerror="this.style.display='none'"><div class="card-overlay"><span class="grade-badge">${c.grade}</span><h3>${c.name}</h3></div></div><div class="card-meta"><strong>${c.role}</strong><span>→</span></div>`;
+    card.innerHTML=`<div class="character-image"><img src="${c.img}" alt="${c.name}" loading="lazy"><div class="card-overlay"><span class="grade-badge">${c.grade}</span><h3>${c.name}</h3></div></div><div class="card-meta"><strong>${c.role}</strong><span>→</span></div>`;
     card.addEventListener('click',()=>openModal(c));grid.appendChild(card);
   });
   groupRoot.appendChild(section);
