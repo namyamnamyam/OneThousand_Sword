@@ -6,6 +6,12 @@
   <meta name="theme-color" content="#090b0f" />
   <title>만검 아카데미</title>
   <link rel="stylesheet" href="styles.css?v=20260908-4" />
+  <style>
+    .hero-panel{min-height:300px}
+    .hero-copy{padding:40px 68px}
+    @media(max-width:900px){.hero-copy{padding:40px 38px}}
+    @media(max-width:650px){.hero-panel{min-height:280px}.hero-copy{padding:34px 24px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -113,7 +119,6 @@
         <h3 id="modal-name"></h3>
         <p id="modal-sub"></p>
         <div class="modal-columns">
-          <div><small>외형</small><p id="modal-look"></p></div>
           <div><small>성격</small><p id="modal-personality"></p></div>
         </div>
         <div class="modal-box"><small>전투 방식</small><strong id="modal-style"></strong><p id="modal-desc"></p></div>
@@ -122,6 +127,6 @@
   </div>
 
   <footer>MANGEOM ACADEMY OFFICIAL · TEN THOUSAND SWORDS</footer>
-  <script src="script.js?v=20260908-4"></script>
+  <script src="script.js?v=20260908-5"></script>
 </body>
 </html>
